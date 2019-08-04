@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>X</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--ALL OF THESE NEED TO BE LINKED IN THIS ORDER FOR JS TO WORK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- import the webpage's stylesheet -->
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <title>X</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {box-sizing: border-box;}
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+        border-bottom: ridge;
+        height:50px;
+      }
+      .topnav a {
+        float: right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav .logo {
+        float:left;
+      }
+      .topnav a:hover {
+        background-color: #F2F2F2;
+        color: black;
+      }
+      .topnav a.active {
+        /* background-color: #F2F2F2; */
+        color: black;
+      }
+      .topnav .search-container {
+        float: right;
+      }
+      .topnav .logo a {
+        float: left;
+      }
+      .topnav input[type=text] {
+        padding: 6px;
+        font-size: 17px;
+        border: none;
+        width: 150px;
+      }
+      .topnav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      .topnav .search-container button:hover {
+        background: #ccc;
+      }
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;  
+        }
+      }
+      .btn {
+        height:300px;
+        width:300px;
+        background: white;
+        color: black;
+      }
+      .btn:hover {
+        background:lightblue;
+      }
+      .modal{ 
+        color: black;
+        background:white;
+      }
+      .waves-blue {
+        background:lightblue;
+      }
+      .btn-flat {
+        background:lightblue;
+      }
+      .btn-flat:hover {
+        background:lightblue;
+      }
+      .modal-footer {
+        background: lightblue;
+        color:white;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #f1f1f1;
+        margin: 30px;
+      }
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .titlex {
+        text-align:center;
+      }
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          /*   margin-bottom: 20px;*/
+          text-align: center;
+        }
+      }
+      /* Style the counter cards */
+      body {
+        background-color: white; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #F6CECE, white, #CEE3F6); /* Standard syntax (must be last) */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <div class = "toplink">
+        <div class="logo">
+          <a href="#about"><i class=" material-icons">card_travel</i></a>
+        </div>
+      </div>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <a href="#about">Contact Us</a>
+      <a href="#about">About</a>
+      <a class="active" href="#home">Home</a>
+    </div>
+    <div class = "titlex">
+      <h4>How much do you know about the United States Commonwealth and Territories?</h4>
+      <h5>
+        <p>Besides the 50 main states in the Union, the United States has several territories in different parts of the world.</p>
+      </h5>
+      <h6>
+        Click each card to learn something!
+      </h6>
+    </div>
+    <!-- Modal Trigger -->
+    <div class="row">
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+          <h6><b>      American Samoa - AS</b>
+          </h6>
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fam.jpg?v=1564789895573"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <div id= "cont1">
+              <h5>Did you know?</h5>
+              <br>
+              <h6>
+                The American Samoa island of Tutuila has the largest concentration of fast food restaurants and is the biggest purchaser of fast food in the entire South Pacific.
+              </h6>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal2">  <h6><b>   District of Columbia - DC</b>
+          </h6>
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fwashington-dc-district-of-columbia-usa-north-america.jpg?v=1564790208479"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              There are underground tunnels beneath the capitol.
+              Miles and miles of tunnels are for senators and members of the House only and are never seen by the public. </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal3"> <h6><b>   Federated States of Micronesia - FM</b>
+          </h6> 
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Ffom.jpg?v=1564886056663"  height="223" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              The majority of the islands that form Micronesia are either volcanic islands or coral atolls.
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal4">  <h6><b>    Guam - GU</b>
+          </h6> 
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fguam1.jpg?v=1564886176706"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br><h6>
+            Guam's citizens are known as Chamorro.
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal5">  <h6><b>     Marshall Islands - MH</b>
+          </h6>
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fmi1.jpg?v=1564887295757"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              The Marshall Islands is made up of two archipelagic chains, with a total of 29 atolls. The names of the two island groups of the Marshall Islands are the Ratak Chain and the Ralik Chain – Ratak meaning sunrise and Ralik meaning sunset.  </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal6">  <h6><b>     Northern Mariana Islands - MP</b>
+          </h6>
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fnm1.jpeg?v=1564887302648"  height="223" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal6" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              Since the 1500s, Northern Marianas has seen Spanish, German and Japanese rule. During World War II, the Northern Marianas islands became a war zone, with U.S. and Japanese soldiers fighting each other. After the war, the island became a territory of the U.S.    </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal7"> <h6><b>     Palau - PW</b>
+          </h6> 
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fpal1.jpg?v=1564887448361"  height="240" width="265" text-align:center>
+        </a>  
+        <div id="modal7" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              Palau is home to the world-famous Rock Islands. The Rock Islands are a cluster of more than two hundred rounded knobs of forest-capped limestone that plunges steeply into the sea. The Islands were declared a UNESCO World Heritage Site in 2012.   </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal8">  <h6><b>    Puerto Rico - PR</b>
+          </h6>
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fpr1.png?v=1564887448817"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal8" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              The Bacardi rum factory located in San Juan is the largest rum distillery in the world.
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal9">  <h6><b>     Virgin Islands - VI</b>
+          </h6> 
+          <img src = "https://cdn.glitch.com/ccb51006-f557-4b97-910e-dbfe05d17471%2Fvi1.jpg?v=1564887448258"  height="240" width="265" text-align:center>
+        </a>  
+        <!-- Modal Structure -->
+        <div id="modal9" class="modal">
+          <div class="modal-content">
+            <h5>Did you know?</h5>
+            <br>
+            <h6>
+              The US Virgin Islands are the only place in the USA where you drive on the left side of the road. Even though the islands are part of the USA, driving dates back to when they were under European rule.  </h6>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Cool!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
