@@ -108,6 +108,7 @@
       .modal{ 
         color: black;
         background:white;
+        margin-top: 100px;
       }
       .waves-blue {
         background:lightblue;
@@ -130,15 +131,11 @@
       }
       /* Styling columns */
       .column {
-        width: 20%;
         text-align: center;
         background-color: #f1f1f1;
         margin: 60px;
         display: inline-block;
       }
-      /* Styling rows */
-      .row {margin: 0 0;}
-      text-align: center;
       /* Clear floats after the columns */
       .row:after {
         content: "";
@@ -147,7 +144,6 @@
         text-align:center;
         margin-left:auto;
         margin-right:auto;
-        text-align: center;
         position: fixed; 
       }
       .titlex {
@@ -156,11 +152,14 @@
         margin-right:auto;
       }
       /* Responsive columns */
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: auto) {
         .column {
           width: 100%;
-          display: block;
+          display: inline-block;
           text-align: center;
+          margin-left:auto;
+          margin-right:auto;
+          position: fixed; 
         }
       }
       /* Styling background */
@@ -198,7 +197,7 @@
       </h6>
     </div>
     <!-- Modal Trigger -->
-    <div class="row">
+    <div class="row 123">
       <div class="column">
         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
           <h6><b>      American Samoa - AS</b>
