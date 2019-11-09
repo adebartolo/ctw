@@ -1,2 +1,2 @@
-United States Commonwealth and Territorie
+United States Commonwealth and Territories
 https://ctw2.glitch.me/
